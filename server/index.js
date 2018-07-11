@@ -11,8 +11,8 @@ app.use(express.static(path.join(__dirname, '../static')));
 
 app.listen(PORT, err => {
   if (err) {
-    console.log('Failed to listen to server ', err);
+    console.log('Server error', err);
   }
 
-  console.log('Listening to server on PORT ', PORT);
+  console.log('Listening on port ', PORT);
 });
